@@ -1,22 +1,25 @@
 <div class="container mt-5">
-  <h1>Book Cheap Bus Tickets</h1>
-  <h2>Check Bus Schedules, Compare Prices and Book Your Bus Ticket Online</h2>
-  <div class="row">
-    <div class="col">
-      <input type="text" class="form-control" placeholder="From" aria-label="First name">
-    </div>
-    <div class="col">
-      <input type="text" class="form-control" placeholder="To" aria-label="Last name">
-    </div>
-    <div class="col">
-      <input type="text" class="form-control" placeholder="Departure Date" aria-label="Departure Date">
-    </div>
-    <div class="col">
-      <input type="text" class="form-control" placeholder="Return Date" aria-label="Return Date">
-    </div>
-    
+  <div class="h1-h2">
+    <h1>Book Cheap Bus Tickets</h1>
+    <h2>Check Bus Schedules, Compare Prices and Book Your Bus Ticket Online</h2>
   </div>
-  <div class="col">
-    <button class="btn btn-primary btn-block">Search</button>
-  </div>
+  <form method="POST" action="/search">
+    <div class="row">
+      <div class="col">
+        <input type="text" class="form-control" placeholder="From" name="from" aria-label="First name">
+      </div>
+      <div class="col">
+        <input type="text" class="form-control" placeholder="To" name="to" aria-label="Last name">
+      </div>
+      <div class="col">
+        <input type="text" class="form-control" placeholder="Departure Date" name="departure" aria-label="Departure Date">
+      </div>
+      <div class="col">
+        <input type="text" class="form-control" placeholder="Return Date" name="return" aria-label="Return Date">
+      </div>
+    </div>
+    <div class="al-center">
+      <button type="submit" class="button">Search</button>
+    </div>
+  </form>
 </div>
